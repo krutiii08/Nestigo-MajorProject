@@ -129,7 +129,7 @@ app.use("/listings/:id/reviews",reviewsRouter);
 app.use("/",userRouter);
 
 app.get("/", (req, res) => {
-  res.send("Nestigo Project is Live 🚀");
+  res.send("/listings");
 });
 
 // app.get("/testListing",async (req,res)=>{
