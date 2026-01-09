@@ -153,6 +153,9 @@ app.use((err,req,res,next)=>{
     // res.status(statusCode).send(message);
 })
 
+app.get("/", (req, res) => {
+  res.send("Nestigo Project is Live 🚀");
+});
 
 
 app.listen(8090,()=>{
