@@ -129,7 +129,7 @@ app.use("/listings/:id/reviews",reviewsRouter);
 app.use("/",userRouter);
 
 app.get("/", (req, res) => {
-  res.send("/listings");
+  res.send("/");
 });
 
 // app.get("/testListing",async (req,res)=>{
