@@ -128,6 +128,10 @@ app.use("/listings/:id/reviews",reviewsRouter);
 
 app.use("/",userRouter);
 
+app.get("/", (req, res) => {
+  res.send("Nestigo Project is Live 🚀");
+});
+
 // app.get("/testListing",async (req,res)=>{
 //     let sampleListing=new Listing({
 //         title:"My New Villa",
@@ -152,10 +156,6 @@ app.use((err,req,res,next)=>{
     res.status(statusCode).render("error.ejs",{message})
     // res.status(statusCode).send(message);
 })
-
-app.get("/", (req, res) => {
-  res.send("Nestigo Project is Live 🚀");
-});
 
 
 app.listen(8090,()=>{
