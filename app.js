@@ -91,10 +91,10 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 
-//root
-// app.get("/",(req,res)=>{
-//     res.send("Hii,I am root");
-// });
+// ROOT ROUTE
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 
 
